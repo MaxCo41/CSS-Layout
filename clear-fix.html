@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>clear-fix</title>
+  </head>
+  <body>
+      <div>
+        <img src="http://fr.learnlayout.com/images/ilta.png">
+        <p>Oh oh... cette image est plus grande que l'élément qui la contient, et elle est flottante, donc elle déborde de son conteneur !
+        </p>
+
+      </div>
+      <div class="clearfix">
+        <img src="http://fr.learnlayout.com/images/ilta.png">
+        <p>Beaucoup mieux !</p>
+  <style>
+  div {
+    width: 250px;
+    border: 3px grey solid;
+  }
+  .clearfix{
+    overflow: auto;
+  }
+  </body>
+</html>

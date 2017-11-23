@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>margin</title>
+  </head>
+  <body>
+    <h2>Margin auto</h2>
+          <div id="main">
+            <p>Attribuer une width à un élément block-level l'empêchera de s'étirer sur toute la largeur de son conteneur.
+              <br>Ensuite vous pouvez mettre la valeur auto aux propriétés margin-right et margin-left pour centrer horizontallement cet élément à l'intérieur de son conteneur.
+              <br>L'élément prendra la largeur que vous avez spécifié et l'espace restant sera séparé équitablement entre les deux marges.
+              <br>Le seul problème survient lorsque la fenêtre du navigateur est plus petite que la largeur de votre élément.
+              <br>Le navigateur résout cela en créant une barre de défilement (scrollbar) horizontale. Améliorons cette situation...
+            </p>
+          </div>
+    <h2>max-width</h2>
+          <div id="main">
+            <p>Utiliser max-width à la place de width améliorera la gestion des petites fenêtres. C'est très important lorsque l'on créé un site accessible sur mobile. Redimensionnez cette page pour voir !
+
+              Au fait, max-width est supporté par tous les navigateurs majeurs incluant IE7+, vous ne devez donc pas avoir peur de l'utiliser.
+            </p>
+          </div>
+          <style>
+          #main {
+            width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 600px;
+            border: 3px grey solid;
+          }
+          </style>
+  </body>
+</html>

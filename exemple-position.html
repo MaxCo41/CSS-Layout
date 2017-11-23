@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Exemple position</title>
+  </head>
+  <body>
+    <div class="container">
+    <div class="nav">
+      <nav>
+        <ul>
+          <li>Accueil</li>
+          <li>Menu Taco</li>
+          <li>Projet de liste</li>
+          <li>Horaires</li>
+          <li>Direction</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+    </div>
+    <div class="section">
+      <section>La propriété margin-left pour les sections assure qu'il y a de la place pour la nav.</section>
+    </div>
+    <div class="section">
+      <section>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.</section>
+    </div>
+    <div class="section">
+      <section>Remarquez ce qu'il se passe lorsque vous redimensionnez votre navigateur. Ça marche plutôt bien !</section>
+    </div>
+      <p>Cet exemple marche parce que l'élément conteneur est plus grand que la nav. Ci ce n'était pas le cas, la nav déborderait de son conteneur. Dans les pages suivantes nous discuterons d'autres techniques de mise en page qui ont différents avantages et inconvénients.</p>
+    <div class="footer">
+      <footer>Si vous utilisez un header et un footer positionné en fixed, faites en sorte qu'il y ait de la place pour eux ! J'ajoute un margin-bottom sur le body.</footer>
+    </div>
+    </div>
+      <style>
+      .container{
+        position: relative;
+        border: 3px grey solid;
+      }
+      .nav{
+        position:absolute;
+        left: 0px;
+        width: 200px;
+        border: 3px blue solid;
+
+      }
+      .section{
+        margin-left: 200px;
+        border: 3px yellow solid;
+      }
+      .footer{
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        height: 70px;
+        background-color: white;
+        width: 100%;
+        border: 3px green solid;
+
+      }
+      body {
+        margin-bottom: 120px;
+
+      }
+      </style>
+  </body>
+</html>

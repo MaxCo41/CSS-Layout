@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Display</h1>
+    <p>La propriété CSS display est la plus importante pour contrôler la mise en page. Chaque élément à une valeur display par défaut dépendante du type de l'élément.
+      <br> Les valeurs par défaut de la plupart des éléments sont block ou inline.
+      <br>Un élément block est souvent appelé un élément block-level. Un élément inline n'est jamais appelé autrement qu'un élément inline
+    </p>
+
+    <h2>Block</h2>
+        <div class="block">
+          <p>div est l'élément block-level standard. Un élément block-level commence sur une nouvelle ligne et s'étire autant qu'il peut sur la gauche et la droite.<br>
+            D'autres éléments block-level courant sont p et form, et les nouveaux en HTML5 sont header, footer, section, et plus.</p>
+        </div>
+    <h2>Inline</h2>
+        <span>Un span est un élement inline Un élément inline peut encadrer du texte dans un paragraphe <(span> comme ceci <(/span> sans interrompre le flux de ce paragraphe.<br>
+         L'élément a est l'élément inline le plus courant, puisque vous l'utilisez pour vos liens.</span>
+    <h2>None</h2>
+         <p class="display-none">Tututu tu ne me vois pas! :p c'est normal je suis sur display: none;</p>
+         <p>Une autre valeur display courante est none. Quelques éléments spéciaux comme script l'utilisent par défaut. display: none; est très utile pour masquer ou afficher facilement des éléments en CSS ou en Javascripts sans avoir à les supprimer et les recréer dans le DOM.
+         <br>Ne confondez pas display: none; et visibility: hidden; ! display: none; masque totalement l'élément et annule des propriétés telles que margin, padding, width, height...tandis que visibility: hidden; masque seulement l'élément, ce qui peut laisser des espaces vides.</p>
+    <h2>d'autre valeur pour display</h2>
+         <p>Display possède une quantité d'autres valeurs exotiques, comme list-item et table. Voici une liste exhaustive. Nous discuterons de inline-block et flex plus tard.</p>
+    <h2>Bonus</h2>
+          <ul class="bonus">
+            <li>Comme je le disais, chaque élément a un type display par défaut.</li>
+            <li>Cependant, vous pouvez toujours les écraser ! </li>
+            <li>Même si ça n'a pas beaucoup de sens de rendre une div inline, vous pouvez faire cela pour customiser des éléments qui ont une sémantique particulière.</li>
+            <li>Un exemple courant est de rendre inline les éléments li pour faire des menus horizontaux. </li>
+          </ul>
+        <style>
+        div {
+          display: block;
+          border: 2px grey solid;
+        }
+        .display-none {
+          display: none;
+        }
+        .bonus li {
+          display: inline;
+        }
+
+      
+        </style>
+  </body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>FlexBox</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <ul>
+          <li>Accueil</li>
+          <li>Taco Menu</li>
+          <li>Draft-list</li>
+          <li>Hours</li>
+          <li>Directions</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+      <div class="flex-column">
+        <section>FlexBox c'est trop facile!</section>
+        <section>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.
+        </section>
+      </div>
+    </div>
+      <style>
+      .container {
+        display: -webkit-flex;
+        display: flex;
+        border: grey 3px solid;
+          }
+        nav {
+            width: 200px;
+            border: blue 3px solid;
+          }
+        .flex-column {
+          -webkit-flex: 1;
+          flex: 1;
+          border: 3px pink solid;
+          }
+          section {
+            border: 3px yellow solid;
+          }
+        </style>
+<div class="container">
+<div class="initial">
+  <p>J'ai une largeur de 200px quand il y a la place et je serai réduite à 100px s'il n'y en a pas, mais pas moins.</p>
+</div>
+<div class="none">
+  <p>J'aurai toujours une largeur de 200px, peu importe ce qu'il se passe.</p>
+</div>
+<div class="flex1">
+  <p>Je prendrai 1/3 de la place restante</p>
+</div>
+<div class="flex2">
+  <p>Je prendrai 2/3 de la place restante</p>
+</div>
+</div>
+
+<style>
+    .container {
+      display: -webkit-flex;
+      display: flex;
+      border: grey 3px solid;
+    }
+    .initial {
+      -webkit-flex: initial;
+          flex: initial;
+          width: 200px;
+          min-width: 100px;
+          border: yellow 3px solid;
+    }
+    .none {
+      -webkit-flex: none ;
+        flex:none;
+        width:200px;
+        border: yellow 3px solid;
+      }
+      .flex1 {
+        -webkit-flex: 1;
+        flex:1;
+        border: yellow 3px solid;
+      }
+      .flex2 {
+        -webkit-flex: 2;
+            flex:2;
+            border: yellow 3px solid;
+      }
+      </style>
+
+      <div class="vertical-container">
+        <div>
+          <p>Pour finir, c'est facile d'aligner quelque chose verticalement en CSS !</p>
+        </div>
+      </div>
+
+      <style>
+      .vertical-container {
+  height: 300px;
+  display: -webkit-flex;
+  display:         flex;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+          border: grey 3px solid;
+}
+.vertical-container p {
+  border: yellow 3px solid;
+}
+    </style>
+
+
+      </body>
+</html>
