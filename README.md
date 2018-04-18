@@ -1,2 +1,4 @@
 # CSS-Layout
-https://maxco41.github.io/CSS-Layout/
+
+Exercice regroupant de la théorie sur le CSS3.
+
